@@ -55,17 +55,17 @@ export const Hero = () => {
                             <Button size="lg">
                                 Contact me<ArrowRight className="w-5 h-5"/>
                             </Button>
-                            <AnimatedBorderButton/>
+                            <AnimatedBorderButton>Download CV</AnimatedBorderButton>
                         </div>
                         {/* Social Media Links */}
                           <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                             <span className="text-sm text-muted-foreground">Follow me:</span>
                             {[
-                                { network: "github", href: "#" },
-                                { network: "linkedin", href: "#" },
-                                { network: "twitter", href: "#" }
+                                { network: "github", href: "https://github.com/lajaln" },
+                                { network: "linkedin", href: "https://www.linkedin.com/in/laurence-nase-3420b4282" },
+                                { network: "twitter", href: "https://x.com/g_alln" }
                             ].map((social, idx) => (
-                               <a key={idx} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">{<SocialIcon network={social.network} className="w-5 h-5"/>}</a>
+                               <a key={idx} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">{<SocialIcon network={social.network} style={{width: 30, height:30}}/>}</a>
                             ))}
                         </div>
                     </div>
