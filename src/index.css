@@ -10,7 +10,7 @@
     --color-primary-foreground: #ffffff;
     
     --color-secondary: #1f2830;
-    --color-secondary-foreground: #20b2a6;
+    
 
     --color-muted: #252e37;
     --color-muted-foreground: #7a8491;
@@ -31,6 +31,9 @@
         background-color: var(--color-background);
         color: var(--color-foreground);
         font-family: 'Inter', sans-serif;
+    }
+    button {
+        cursor: pointer;
     }
     .font-serif {
         font-family: "Playfair Display", serif;
